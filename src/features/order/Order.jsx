@@ -65,6 +65,7 @@ function Order() {
     orderPrice,
     estimatedDelivery,
     cart,
+    customer,
   } = order;
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
@@ -106,6 +107,7 @@ function Order() {
         <p className="text-xs text-stone-500">
           (Estimated delivery: {formatDate(estimatedDelivery)})
         </p>
+        <p>Customer Name : {customer}</p>
       </div>
 
       <ul className="divide divide-stone-200 divide-y border-b border-t">
